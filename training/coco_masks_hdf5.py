@@ -40,7 +40,10 @@ def make_mask(img_dir, img_id, img_anns, coco):
 
     flag = 0
     for p in img_anns:
+        p['segmentation'] =  [[p['bbox'][0],p['bbox'][1], p['bbox'][0],p['bbox'][1]+p['bbox'][3],p['bbox'][0]+p['bbox'][2],p['bbox'][1]+p['bbox'][3],p['bbox'][0]+p['bbox'][2],p['bbox'][1]]]
+        p['area'] = p['bbox'][2]*p['bbox'][3]
         seg = p["segmentation"]
+        # seg = p["segmentation"]
 
         if p["iscrowd"] == 1:
             mask_crowd = coco.annToMask(p)
