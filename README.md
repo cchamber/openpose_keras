@@ -9,8 +9,9 @@ We have edited the Anatolix fork to do transfer learning, starting with the trai
 ## Changes
 
 - Add config file to main folder
-- Add video demo
-- Remove segmentation mask from training code
+- Add video demo to main folder
+- Remove segmentation mask from coco_masks_hdf5.py (replace with bounding box)
+- load cmu model weights in train_pose.py
 - Add instructions
     
 ## Related repository
