@@ -1,0 +1,3 @@
+[submodule "addins"]
+	path = addins
+	url = git@github.com:anatolix/multipose_addins.git
