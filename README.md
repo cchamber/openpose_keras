@@ -2,16 +2,22 @@
 
  This repo was forked from the [Anatolix fork](https://github.com/anatolix/keras_Realtime_Multi-Person_Pose_Estimation) of [Realtime Multi-Person Pose Estimation](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation).
 
-For changes to original [Realtime Multi-Person Pose Estimation](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation) repository, see the [Michal Faber fork](https://github.com/michalfaber/keras_Realtime_Multi-Person_Pose_Estimation) and the [Anatolix fork](https://github.com/anatolix/keras_Realtime_Multi-Person_Pose_Estimation)
+For keras version of original [Realtime Multi-Person Pose Estimation](https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation) repository, see the [Michal Faber fork](https://github.com/michalfaber/keras_Realtime_Multi-Person_Pose_Estimation) and the [Anatolix fork](https://github.com/anatolix/keras_Realtime_Multi-Person_Pose_Estimation)
 
 We have edited the Anatolix fork for transfer learning, starting with the trained CMU model weights.
 
-## Changes
+## Changes to Anatolix fork
 
 - Add config files to main folder
 - Add video demo
 - Remove segmentation mask from coco_masks_hdf5.py (replace with bounding box)
 - load cmu model weights in train_pose.py
+
+## Results
+
+<p align="center">
+<img src="https://github.com/anatolix/keras_Realtime_Multi-Person_Pose_Estimation/blob/master/readme/dance.gif", width="720">
+</p>
 
 ## How to run demo/training
 
