@@ -38,7 +38,6 @@ Run demo on image
 - Output saved in result.png in main folder
 
 Run demo on video
-- Add video to video_data folder
 - `python3 demo_video.py`
 - Output saved to video_data folder: video and x,y coordinates of keypoints in pkl file
 
