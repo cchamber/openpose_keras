@@ -44,8 +44,8 @@ Create .h5 data files
 	- `#!/usr/bin/env python` point to python env
 	- Point to correct .h5 data files
 	- Set size of validation set
-
-`./coco_masks_hdf5.py` to generate .h5 training files
+- `cd training`
+- `./coco_masks_hdf5.py` to generate .h5 training files
 
 Run training
 - Edit /training/train_pose.py 
@@ -53,7 +53,7 @@ Run training
 	- Select gpus
 	- Edit batch size if needed
 	- Select model file to train on
-- Run `./train_pose.py`
+- `./train_pose.py`
 
 Model files saved in /training/Canonical
 
