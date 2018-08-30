@@ -21,9 +21,8 @@ We have edited the Anatolix fork for transfer learning, starting with the traine
 
 ## How to run demo/training
 
-To use COCO:
-- Download the data set (~25 GB) `cd dataset; sh get_dataset.sh`,
-Or add own data
+- To use COCO: Download the data set (~25 GB) `cd dataset; sh get_dataset.sh`,
+- Or add own data
 
 - Download [COCO official toolbox](https://github.com/pdollar/coco) in `dataset/coco/` . 
 - `cd coco/PythonAPI; sudo python setup.py install` to install pycocotools.
