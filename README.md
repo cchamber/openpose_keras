@@ -18,50 +18,42 @@ We have edited the Anatolix fork for transfer learning, starting with the traine
 - Download the data set (~25 GB) `cd dataset; sh get_dataset.sh`,
 - Download [COCO official toolbox](https://github.com/pdollar/coco) in `dataset/coco/` . 
 - `cd coco/PythonAPI; sudo python setup.py install` to install pycocotools.
+- Use coco-api to view data
 
 - Download converted CMU keras model to model folder
-`cd /model
-sudo ./get_keras_model.sh`
+- `cd /model;'
+- 'sudo ./get_keras_model.sh`
 
-Run demo on image:
-cd ..
-python3 demo_image.py --image sample_images/ski.jpg
-Output saved in result.png in main folder
+#### Testing steps
 
-Run demo on video:
-Add video to video_data folder
-python3 demo_video.py
-Output saved to video_data folder
+Run demo on image
+- `cd ..'
+- 'python3 demo_image.py --image sample_images/ski.jpg`
+- Output saved in result.png in main folder
+
+Run demo on video
+- Add video to video_data folder
+- 'python3 demo_video.py'
+- Output saved to video_data folder
 
 
-Training steps
-
-Download data to /dataset
-
-coco:
-sudo ./get_dataset.sh
-
-Or add own data files to /dataset
-
-Use coco-api to view data
-
+#### Training steps
 
 Create .h5 data files
-Edit /training/coco_masks_hdf5.py 
-#!/usr/bin/env python # point to python env
-point to correct .h5 data files
-Set size of validation set
+- Edit /training/coco_masks_hdf5.py 
+	- '#!/usr/bin/env python' point to python env'
+	- Point to correct .h5 data files
+	- Set size of validation set
 
-./coco_masks_hdf5.py to generate .h5 training files
+'./coco_masks_hdf5.py' to generate .h5 training files
 
 Run training
-Edit ./train_pose.py 
-#!/usr/bin/env python # point to python env
-Select gpu numbers
-Change batch size if needed
-Select model to train on
-
-Run ./train_pose.py
+- Edit /training/train_pose.py 
+	- '#!/usr/bin/env python' point to python env
+	- Select gpus
+	- Edit batch size if needed
+	- Select model file to train on
+- Run './train_pose.py'
 
 Model files saved in /training/Canonical
 
