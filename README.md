@@ -21,8 +21,8 @@ We have edited the Anatolix fork for transfer learning, starting with the traine
 - Use coco-api to view data
 
 - Download converted CMU keras model to model folder
-- `cd /model;'
-- 'sudo ./get_keras_model.sh`
+- `cd /model;`
+- `sudo ./get_keras_model.sh`
 
 #### Testing steps
 
@@ -40,7 +40,7 @@ Run demo on video
 #### Training steps
 
 Create .h5 data files
-- Edit /training/coco_masks_hdf5.py 
+- Edit `/training/coco_masks_hdf5.py`
 	- `#!/usr/bin/env python` point to python env
 	- Point to correct .h5 data files
 	- Set size of validation set
@@ -48,14 +48,14 @@ Create .h5 data files
 - `./coco_masks_hdf5.py` to generate .h5 training files
 
 Run training
-- Edit /training/train_pose.py 
+- Edit `/training/train_pose.py` 
 	- `#!/usr/bin/env python` point to python env
 	- Select gpus
 	- Edit batch size if needed
 	- Select model file to train on
 - `./train_pose.py`
 
-Model files saved in /training/Canonical
+Model files saved in `/training/Canonical`
 
     
 ## Related repository
