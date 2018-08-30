@@ -40,7 +40,7 @@ Run demo on image
 Run demo on video
 - Add video to video_data folder
 - `python3 demo_video.py`
-- Output saved to video_data folder
+- Output saved to video_data folder: video and x,y coordinates of keypoints in pkl file
 
 
 #### Training steps
