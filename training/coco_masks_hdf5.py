@@ -29,6 +29,7 @@ val_hdf5_path = os.path.join(dataset_dir, "coco_val_dataset.h5")
 val_size = 2645 # size of validation set
 
 
+
 def make_mask(img_dir, img_id, img_anns, coco):
 
     img_path = os.path.join(img_dir, "%012d.jpg" % img_id)
