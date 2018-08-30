@@ -27,13 +27,13 @@ We have edited the Anatolix fork for transfer learning, starting with the traine
 #### Testing steps
 
 Run demo on image
-- `cd ..'
-- 'python3 demo_image.py --image sample_images/ski.jpg`
+- `cd ..`
+- `python3 demo_image.py --image sample_images/ski.jpg`
 - Output saved in result.png in main folder
 
 Run demo on video
 - Add video to video_data folder
-- 'python3 demo_video.py'
+- `python3 demo_video.py`
 - Output saved to video_data folder
 
 
@@ -41,19 +41,19 @@ Run demo on video
 
 Create .h5 data files
 - Edit /training/coco_masks_hdf5.py 
-	- '#!/usr/bin/env python' point to python env'
+	- `#!/usr/bin/env python` point to python env
 	- Point to correct .h5 data files
 	- Set size of validation set
 
-'./coco_masks_hdf5.py' to generate .h5 training files
+`./coco_masks_hdf5.py` to generate .h5 training files
 
 Run training
 - Edit /training/train_pose.py 
-	- '#!/usr/bin/env python' point to python env
+	- `#!/usr/bin/env python` point to python env
 	- Select gpus
 	- Edit batch size if needed
 	- Select model file to train on
-- Run './train_pose.py'
+- Run `./train_pose.py`
 
 Model files saved in /training/Canonical
 
